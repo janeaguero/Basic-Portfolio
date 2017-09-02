@@ -1,90 +1,171 @@
 @charset "utf-8";
 /*CSS Document*/
 
-body{
-	width:100%;
-	min-height:750px;
-	background:url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png');
+*{
+	box-sizing:border-box;
 }
 
-.wrapper{
-	position:relative;
-	width:80%;
-	margin:0 10%;
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 34px;
+	color:#777;
+	background:url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png');
+	background-position:center;
 }
+
+/* general */
+
+.container{
+	width:100%;
+	max-width:960px;
+	margin: 0 auto;
+	clear:both;
+}
+
+h1, 
+h2, 
+h3, 
+p{
+	margin-bottom:20px;
+}
+
+p:last-child{
+	margin-bottom: 0;
+}
+
+h1, h2, h3{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+
+h1{
+	padding-bottom: 20px;
+	font-size: 30px;
+	line-height:49px;
+	border-bottom: 3px solid #ddd;
+}
+
+h2, h3{
+	font-size: 22px;
+}
+
+/* header */
 
 header{
-	position:relative;
-	width:100%;
-	height:100px;
-	background:white;
-	box-shadow: 0px 1.5px 1.5px dimgrey;
-	overflow-y:hidden;
-	z-index:1;
-}
-
-.logo{
-	position:relative;
-	width:30%;
-	height:100%;
-	background:#4aaaa5;
-	margin-left:8%;
-	color:white;
-	padding-top:3%;
-
+	position:fixed;
+	z-index: 99;
+	width: 100%;
+	margin: 0 0 30px;
+	overflow: auto;
+	color: #fff;
+	background: #fff;
+	border-bottom:2px solid #ccc;
 }
 
 .logoText{
-	position:relative;
-	text-align:center;
-	font-size:2em;
-	float:center;
-	font-family:"Georgia", Times, Times New Roman, serif;
-	font-weight:bold;
+	float: left;
+	width: 250px;
+	height: 90px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size:30px;
+	font-weight: 700;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #4aaaa5;
 }
 
 nav{
-	position:absolute;
-	top:40%;
-	left:62%;
-	width:30%;
-	height:20px;
-	background-color:none;
+	position:relative;
+	float:right;
+	margin: 25px 100px;
 }
 
-/*.main{
-	min-height:650px;
-	width:100%;
+nav a {
+	display: inline-block;
+	padding-left: 15px;
+	margin-left: 15px;
+	line-height: 18px;
+	color: #999;
+	text-decoration: none;
+	border-left: 1px solid #efefef;
+}
+
+nav a:first-child{
+	border-left: 0 none;
+}
+
+/* footer */
+
+footer {
 	position:relative;
-	background:url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png');
-}*/
+	padding: 30px;
+	height:150px;
+	clear: both;
+	font-size: 12px;
+	color: #fff;
+	color: #ccc;
+	text-align: center;
+	background: #666;
+	border-top: 8px solid #4aaaa5;
+	margin-bottom:0;
+}
+
+/* aside */
+
+.asideBox{
+	float: right;
+	width: 100%;
+	max-width: 270px;
+	padding: 30px;
+	margin-bottom: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+h3, .asideBox h2{
+	padding-bottom:20px;
+	margin-bottom:15px;
+	line-height: 22px;
+	border-bottom: 2px solid #eee;
+}
+
+.socialMedia{
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+.social:last-child{
+	margin-right: 0;
+}
+
+/* main */
+
+#main{
+	padding-top: 130px;
+}
 
 .mainBox{
-	position:relative;
-	float:left;
-	width:45%;
-	margin:5% 5% 8%;
-	background-color:white;
-	padding:2.5%;
-	border-style:solid;
-	border-width:1px;
-	border-color:#cccccc;
-	color:#777777;
+	float: left;
+	width: 100%;
+	max-width: 650px;
+	padding: 30px;
+	margin: 0 0 40px;
+	background: #fff;
+	border: 1px solid #ddd;
 }
 
-.portfolioBox{
-	position:relative;
-	float:left;
-	width:50%;
-	margin:5% 0 8% 8%;
-	background-color:white;
-	padding:2.5%;
-	border-style:solid;
-	border-width:1px;
-	border-color:#cccccc;
-	color:#777777;
-	overflow:scroll;
-	height:450px;
+.mainBox:after{
+	content: " ";
+	visibility:hidden;
+	display:block;
+	height: 0;
+	clear:both;
 }
 
 .profilePic{
@@ -95,199 +176,111 @@ nav{
 	width:50%;
 }
 
-.text{position:relative;
-	clear:right;
-	line-height:150%;
-	margin-bottom:5%;
-	color:#777777;
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: hidden;
 }
 
-.asideBox{
-	position:relative;
-	float:right;
-	width:20%;
-	margin:5% 15% 0 0;
-	background:white;
-	padding:2%;
-	border-style:solid;
-	border-width:1px;
-	border-color:#cccccc;
+.work:nth-child(even) {
+  margin-right: 40px;
 }
 
-.socialMedia{
-	position:relative;
-	float:left;
-	margin:0 5% 5% 0;
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
 }
 
-input{
-	position:relative;
-	width:90%;
-	height:35px;
-	margin:1% 2% 2.5% 0;
-	padding: 5px 20px; 
-	background: #ffffff;
-	border-color:#cccccc;
-	border-style:solid;
-	border-width:1px;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 1em;
-	color: #777777; 
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
-input::-webkit-input-placeholder{
-    color: #cccccc; 
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
-input:-moz-placeholder{
-	color: #cccccc;
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
 }
 
-textarea{
-	position:relative;
-	width: 90%;
-	height: 15vh;
-	margin:1% 0 2%;
-	padding: 12px 20px; 
-	background: #FFFFFF;
-	border-color:#cccccc;
-	font-size: 16px; 
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777777;
+#contact-form li {
+  margin-bottom: 10px;
 }
 
-textarea::-webkit-input-placeholder{
-    color: #cccccc;  
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
 }
 
-textarea:-moz-placeholder{
-	color: #cccccc;
-}
-	
-input:focus, textarea:focus{
-	background: #ffffff;
-}
-
-input[type=submit]{
-	position:relative;
-	width: 25%; 
-	height: 45px; 
-	float:left;
-	cursor: pointer;
-	font-size:1em;
-	color:#777777;
-	border-style:solid;
-	border-width:1px;
-	border-color:#4aaaa5;
-}
-	
-input[type=submit]:hover{
-	background-color:#4aaaa5;
-	color:white;
-	border:0;
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
 }
 
-input[type=button]{
-	position:relative;
-	width:45%;
-	height:35px;
-	margin:10%;
-	padding:0;
-	background: #ffffff;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777777;
-	cursor: pointer;
-	border-radius:5px;
+textarea {
+  height: 200px;
 }
 
-input[type=button]:hover{
-	background:#777777;
-	color:white;
-}
-
-footer{
-	position:relative;
-	background-color:#666666;
-	clear:left;
-	width:100%;
-	height:100px;
-}
-
-.portfolioPiece{
-	position:relative;
-	float:left;
-	background:url("http://lorempixel.com/125/75") no-repeat center;
-	background-size:cover;
-	width:266.2px;
-	height:177.45px;
-	margin:2.5%;
-}
-
-.footyStripe{
-	position:relative;
-	width:100%;
-	height:6px;
-	background-color:#4aaaa5;
-	top:0;
-}
-
-.footyText{
-	position:relative;
-	text-align:center;
-	color:white;
-	top:35%;
-	font-size: .9em;
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
 
 
 
-
-hr{
-	border-color:#cccccc;
+/*HORIZONTAL TABLET : 1024*/
+@media only screen and (max-width : 1024px) and (min-width : 769px){
+	.container{
+		max-width:769px;
+	}
+	.mainBox{
+		width:60%;
+	}
 }
 
-h1{
-	font-family:"Georgia", Times, Times New Roman, serif;
-	font-size:2em;
-	color:white;
+/*VERTICAL TABLET : 768*/
+@media only screen and (max-width : 768px) and (min-width : 501px) {
+	.container{
+		max-width:501px;
+	}
 }
 
-h2{
-	font-family:"Georgia", Times, Times New Roman, serif;
-	font-size:1.3em;
-	color:#4aaaa5;
-}
-
-h3{
-	font-family:"Georgia", Times, Times New Roman, serif;
-	font-size:1em;
-}
-
-p{
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-a:link, a:visited{
-	text-decoration:none;
-	display:block;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color:#777777;
-}
-
-a:hover, a:active{
-	color:#4aaaa5;
-}
-
-ul{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	align-content:center;
-}
-
-li{
-	float:left;
-	margin-right:25px;
+/*LARGE MOBILE : 500*/
+@media only screen and (max-width : 500px) and (min-width : 320px) {
+	.container{
+		max-width:320px;
 }
 
 

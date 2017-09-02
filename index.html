@@ -10,55 +10,41 @@
 
 <body>
 
-	<header role="banner">
-		<div class="logo">
-			<div class="logoText">Jane Aguero</div>
+	<header>
+		<div class="container">
+			<a href="index.html" class="logoText">Jane Aguero</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-		<nav role="navigation">
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
 	</header>
 
-	<main class="main">
-		<article class="mainBox">
-				<h2>About Me</h2>
-				<br>
-				<hr noshade>
-				<br>
-				<img src="assets\images\pic-profile.jpg" class="profilePic">
-				<div class="text">
-				<p>
-				I was born and raised in the Skagit Valley of Washington state, and am the youngest of four. While I do love to code and generally spend a majority of my time inside in front of a computer, my favorite place to be is in or near a body of water (see: San Juan Islands, the North Cascade Enchantments, Rogue River Valley). I like cats better than dogs, and my favorite takeout is Indian.
-				<br><br>
-				Also, Peter Dinklage. 
-				</p>
-			</div>
-		</article>
+	<main id="main" class="container">
+		<section class="mainBox">
+			<h1>About Me</h1>
 
-		<article class="asideBox">
-			<h2>Connect with Me</h2>
-			<br>
-			<hr noshade>
-			<br>
-			<div class="socialMedia">
-				<a href="https://www.instagram.com/jane.aguero" target="_blank"><img src="assets\images\icon-instagram.png" height="50px" width="50px"/></a>
-			</div>
-			<div class="socialMedia">
-				<a href="https://www.linkedin.com/in/janeaguero/" target="_blank"><img src="assets\images\icon-linkedin.png" height="50px" width="50px"/></a>
-			</div>
-			<div class="socialMedia">
-				<a href="https://www.behance.net/janeaguero" target="_blank"><img src="assets\images\icon-behance.png" height="50px" width="50px" id="behance"/></a>
-			</div>
-		</article>
+			<img src="assets\images\pic-profile.JPG" class="profilePic">
+
+			<p>I was born and raised in the Skagit Valley of Washington state, and am the youngest of four. While I do love to code and generally spend a majority of my time inside in front of a computer, my favorite place to be is in or near a body of water (see: San Juan Islands, the North Cascade Enchantments, Rogue River Valley). I like cats better than dogs, and my favorite takeout is Indian.</p>
+			<p>Also, Peter Dinklage.</p>
+
+		</section>
+
+		<section class="asideBox">
+			<h1>Connect with Me</h1>
+
+			<a href="https://www.instagram.com/jane.aguero" target="_blank" class="socialMedia"><img src="assets\images\icon-instagram.png" height="50px" width="50px"/></a>
+			<a href="https://www.linkedin.com/in/janeaguero/" target="_blank" class="socialMedia"><img src="assets\images\icon-linkedin.png" height="50px" width="50px"/></a>
+			<a href="https://www.behance.net/janeaguero" target="_blank" class="socialMedia"><img src="assets\images\icon-behance.png" height="50px" width="50px" id="behance"/></a>
+		</section>
 	</main>
 
-	<footer role="contentinfo">
-		<div class="footyStripe"></div>
-		<div class="footyText"><p>&copy; Copyright 2017 Jane Aguero</p></div>
+	<footer>
+		<div class="container">
+			<p>Copyright &copy; 2017 Jane Aguero</p>
+		</div>
 	</footer>
 </body>
 
